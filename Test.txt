@@ -1,0 +1,239 @@
+Calendar
+  Value Of Automation
+  Testing Types
+  How to approach Automation
+  Make a strategy
+  Select test tools
+  Determine Development Processes
+  Follow Test Design Patterns
+  Decide what to automate
+
+Value Of Automation
+ - Automated testing follows the same steps as with manual testing, but it's
+  quicker.
+  Multiple platforms
+  Operating systems
+  Devices
+  - Automation acts a safety net.
+
+Kiểm tra tự động thực hiện theo các bước tương tự như kiểm tra thủ công, nhưng nó
+- nhanh hơn.
+- Có thể kiểm thử với nhiều nền tảng
+- Có thể kiểm thử với các hệ điều hành
+- Có thể dùng các thiết bị hỗ trợ
+- Tự động hóa hoạt động như một mạng lưới an toàn.
+
+Testing Types (Các loại kiểm thử)
+  Unit tests
+  Integration tests(tích hợp nhiều chức năng)
+  Component tests(từng phần)
+  Functional tests
+  Ul tests
+
+How to approach Automation
+ Get the whole team involved
+ It's important to share a chance to everyone
+
+Make a strategy
+ • Identify the automated and manual test scenarios.
+Xác định chiến lược chọn A or M
+ • Best of Use Automation 
+    Most impactful features
+    Tedious workflows
+    Give the same result
+ • Identify types of tests for each scenario.
+  General Rule: push tests to the lowest level whenever possible
+  Goal of Automation
+    Have a well-tested application
+    Provide timely feedback(sét thời gian cho kiểm thử tử động chạy)
+Tách ra các testcase, kh viết gộp lại. Review để tách ra đc nhiều testcase
+• Determine what resources are required.
+Test environments.
+Tool options.
+Test data. 
+- Chức năng đó có mấy ng làm và mất bao nhiêu time
+- Môi trường test ở đây là gì, serve phải sống. Xác định đc browser để test
+- Lựa chọn tool phù hợp
+- Có Dữ liệu (dl đã đc dịnh test)
+Determine Development Processes
+Xđ khi nào chạy Auto:
+Xđ đc quá trình cũng như là tiến trình để làm Auto
++ Xđ mình ở tầng nào
++ UI (code xong r)
++ API test
++ Unit Test(Thường Dev code)
+UI-> API-> Unit Test
+Service/Intergration
+Unit Test(kho vờ đc các tính năng)
+
+Follow Test Design Patterns
+  • Don't repeat yourself 
+    o Avoids duplication
+    o Helps ensure minimal changes
+  • Domain-Specific Language(DSL)
+    o Describes items specific to a test application
+    o Gives a descriptive name to things
+     o Uses the name consistently within the code and tests
+  • Each test should have one purpose.
+  Test can be run any order.
+  Each step of the test should have a function that describes behavior.
+Theo dõi các mẫu thiết kế thử nghiệm
+   • Không lặp lại 
+     o Tránh trùng lặp
+     o Giúp đảm bảo những thay đổi tối thiểu
+   • Ngôn ngữ dành riêng cho miền (DSL)
+     o Mô tả các mục cụ thể cho một ứng dụng thử nghiệm
+     o Đặt tên mô tả cho sự vật
+     o Sử dụng tên đồng nhất trong mã và thử nghiệm
+   • Mỗi testcase nên có một mục đích.
+   • Thử nghiệm có thể được chạy bất kỳ đơn đặt hàng nào.
+   • Mỗi bước của bài kiểm tra nên có một chức năng mô tả hành vi.
+
+
+
+tixiuthu
+Decide what to automate
+  • Identify scenarios to automate
+     o Brainstorm as many scenarios as you can. : ideation
+     o Scenarios to skip
+        • Too off the wall(khó xảy ra)
+        • Not feasible(Không khả thi)
+     o This list of scenarios is not an exhaustive list.
+Selecting a value score
+    Importance of the feature
+    Probability this feature would be fixed if broken
+    Distinctness of the scenario
+Trong một hệ thống phải biết chức năng nào quan trọng nhất
+Khả năng tính năng này sẽ được sửa nếu bị hỏng
+các chức năng ảnh hưởng trực tiếp đến hệ thống
+sự khác biết của kịch bản đó (giá trị mang lại của Auto)
+(Nó làm cho mình đỡ mệt). 
+Decide what to automate
+  • Identify risk of automation
+     The impact of the feature(Độ ảnh hưởng đến hệ thống)
+     Which broken to impact on customer(sự ảnh hưởng đến khách hàng)
+• Identify the cost of automation
+   o Ease of writing test script
+    o Quickness of writing test script
+• Xác định chi phí tự động hóa
+    o Dễ dàng viết kịch bản kiểm tra
+     Tốc độ viết kịch bản thử nghiệm
+• What is the point of brainstorming?
+• How should you score risk?
+• Upon which factors should you prioritize test automation?
+
+Buổi 2:
+Test Case Design & Test Execution
+1. Testing Mindset
+What makes us different
+- We DON'T cemplain -> we offer evidence
+- We DON'T like to break things -> we show that things are not working
+ - We instill CONFIDENCE in the delivered software(kh có bug, phục vụ đc khách hàng)
+• 3 key questions to consider (on your way to developing the testing
+mindset):
+- How do you know software is good enough?
+đúng với yêu cầu khách hàng
+ko có bug
+==>> Funtional Testing
+Tốc độ load cao
+=>> Non-Functional Testing: Performance Testing
+thông tin bảo mật
+=> Non-Functional Testing: Security Testing
+
+- How do you know software isn't good enough?
+Load lâu
+phần mềm không thể họat động
+nhiều lỗi
+vấn đề bảo hành
+Giao diện xấu 
+đúng yêu cầu nhưng đội phát triển có giải pháp tốt hơn nữa ạ
+
+- How do you know you have tested enough?
+Đọc và phân tích
+test hết các trường hợp trong test case và dựa vào yêu câu của khách hàng
+Đảm bảo phần mềm đáp ứng đúng và đủ yêu cầu khách hàng cả về functional và nonfunctionl, trải qua đc ải Acceptance testing
+UAT
+Đi từ đầu đến cuối, đi theo STLC, có process
+STLC
+1. Requirement Analysis
+2. Test Planning (Test Plan, Test Stretagy, Master Schedule...)
+3. Set up Environtment
+4. Test execution
+
+BETTER THAN 'GOOD'TESTING
+ • Focus on the following important 'How's:
+ - How to gather and evaluate evidence
+  - How to make correct assumptions
+ • Understand how we think:
+  - How we learn, recollect & share
+  - How we think under pressure
+  - How we recognize patterns & differences
+
+WHAT DO I NEED TO LEARN?
+• Inference: reaching a conclusion based on evidence and reason
+• Technical thinking: understand cause & effects of technology, using tools,
+ predict behavior of systems
+ • Creative thinking: generate ideas, see possibilities
+ • Critical thinking: detect & eliminate errors of observation, reasoning
+• Practical thinking: put ideas into practice, within scope
+
+• To Understand product
+• To find Problems
+ There is a lot of repetition, backtracking, experimenting =>
+              continuous learning
+• Involves a lot of thinking
+- Forward thinking: From what you know, to what you don't know
+- Backward thinking: From imagination, toward confirming/rejection
+- Lateral thinking: Ideas from exploring
+           Example: Printing in an application
+
+RECOMMENDATIONS 
+ • Test for purpose of showing that product fails, rather than it works
+ • Use implicit and explicit knowledge
+• Use heuristics to generate ideas for tests
+ Be open to new information that contradicts that the software 'has
+ good quality'- No amount of testing provides certainty about
+ quality
+
+7 principel testing
+Software Engineering | Seven Principles of software testing
+1. Testing shows the presence of defects.
+Đừng cố gắng chứng minh product của mình kh có lỗi mà cố gắng tìm nhiều bugs 
+(*)2. Exhaustive testing is not possible.
+Cái quan trọng là set được priority(mức độ ưu tiên & mức độ quan trong của chức năng đó, dùng heatmap(bản đồ nhiệt độ(cho màu sắc), có evel of testcase, đánh độ ưu tiên)
+Kiểm thử toàn diện là không thể
++ vùng ko thể test
++ chi phí ko nhìu mà bắt test hết
++ Không đủ thời gian
++ những case k lường trước được
++ Không đủ trình độ để test
++ Thiết bị k đủ 
+3. Early testing saves time and money.(Test càng sớm càng tốt)(tại giai đoạn design thì sẽ có bị requirement conflict, phải bắt lỗi sớm để trách khi xây dựng thành một hệ thống lại phải mất time và cost để đập ra và xây lại.
+4. Defect clustering.(Khi nào có bug thì phân tích và sửa ngay tải thời điểm đó, tìm kiếm quanh khu vực bug đó.(impact area)(bug defect))
+(*)5. Pesticide paradox.(Nghịch lý thuốc trừ xâu).Reviewed và sửa đổi thường xuyên, thêm các test cases mới để giúp tìm ra nhiều lỗi hơn, training lại cho tester và đổi test case & test data, có thể đổi cả tester
+6. Testing is context-dependent.(Phụ thuộc vào ngữ cảnh: Test trên mobile khác, test trên Web khác, android với ios, Tablet & browser. Test về đối tưởng người dùng của phần mềm đó, nhiều người hay ít người)
+7. Absence of errors fallacy.(Không có lỗi là một sai lầm)
+
+2. Requirement Analysis
+ - Requirements Analysis is the process of defining the expectations of the users for an application that is to be built or modified. It involves all the tasks that are conducted to identify the needs of different stakeholders. Therefore requirements analysis means to analyze, document, validate and manage software or system requirements.
+ - High-quality requirements are documented, actionable, measurable, testable, traceable, helps to identify business opportunities, and are defined to a facilitate system design.
+Requirements Analysis is the process of defining the expectations of the users for an application that is to be built or modified. 
+* Process:
+
+3. Black box testing technique
+- Black-box testing techniques
+ - Equivalence Partitioning (EP)
+vd: 
+ - Boundary Value Analysis (BVA)
+vd: Phân vùng 1 đến 10
++ Test: 1
+	0-2
+	4-6
+	9-11
+ - Decision Table (DT)
+ + Có các điều kiện, action nào có thể xảy ra
+ + Đúng hoặc Sai, có thể kết hợp
+Permission Role
+System có 2 role là Admin vs Accounting
+ - State Transition (ST)
+Xác định điểm đầu và cuối
